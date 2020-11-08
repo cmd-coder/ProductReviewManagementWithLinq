@@ -29,7 +29,10 @@ namespace ProductReviewManagementWithLinq
                 Console.WriteLine("ProductID: " + list.ProductID + " UserID: " + list.UserID + " Rating: " + list.Rating + " Review: " + list.Review + " isLike: " + list.isLike);
             }
 
-            
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 2: Top Three Records With Highest Rating");
+            Management management = new Management();
+            management.TopRecords(productReviewList);
 
         }
     }
