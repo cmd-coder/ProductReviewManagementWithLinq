@@ -24,20 +24,12 @@ namespace ProductReviewManagementWithLinq
                 new ProductReview(){ProductID=11,UserID=1,Rating=3,Review="nice",isLike=true}
             };
 
-            /*foreach(var list in productReviewList)
+            foreach(var list in productReviewList)
             {
                 Console.WriteLine("ProductID: " + list.ProductID + " UserID: " + list.UserID + " Rating: " + list.Rating + " Review: " + list.Review + " isLike: " + list.isLike);
-            }*/
+            }
 
-            //UC2
-            Management management = new Management();
-            //management.TopRecords(productReviewList);
-
-            //UC3
-            //management.SelectRecords(productReviewList);
-
-            //UC4
-            management.RetrieveCountOfRecords(productReviewList);
+            
 
         }
     }
