@@ -34,6 +34,11 @@ namespace ProductReviewManagementWithLinq
             Management management = new Management();
             management.TopRecords(productReviewList);
 
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 3: Rating Greater Than 3 And ProductID Equal To 1, 4 or 9");
+            management.SelectRecords(productReviewList);
+
+
         }
     }
 }
