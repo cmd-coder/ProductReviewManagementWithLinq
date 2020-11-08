@@ -44,6 +44,11 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("---------------------");
             AverageRatingOfEachProductID(productTable);
 
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 11: All The Records With \"Nice\" Reviews");
+            Console.WriteLine("---------------------");
+            AllNiceReviews(productTable);
+
         }
 
         public static void DisplayAllRecords(DataTable productTable)
@@ -70,6 +75,15 @@ namespace ProductReviewManagementWithLinq
             foreach(var list in recordedData)
             {
                 Console.WriteLine("ProductID: " + list.ProductID + " Average Rating: " + list.AverageRating);
+            }
+        }
+
+        public static void AllNiceReviews(DataTable productTable)
+        {
+            var recordedData = from products in productTable.AsEnumerable() where products.Field<string>("Review") == "Nice" select products;
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("ProductID: " + list[0] + " UserID: " + list[1] + " Rating: " + list[2] + " Review: " + list[3] + " isLike: " + list[4]);
             }
         }
     }
