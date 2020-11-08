@@ -16,7 +16,7 @@ namespace ProductReviewManagementWithLinq
                 new ProductReview(){ProductID=3,UserID=1,Rating=5,Review="Good",isLike=true},
                 new ProductReview(){ProductID=4,UserID=1,Rating=6,Review="Good",isLike=false},
                 new ProductReview(){ProductID=5,UserID=1,Rating=2,Review="nice",isLike=true},
-                new ProductReview(){ProductID=6,UserID=1,Rating=1,Review="bas",isLike=true},
+                new ProductReview(){ProductID=6,UserID=1,Rating=1,Review="bad",isLike=true},
                 new ProductReview(){ProductID=8,UserID=1,Rating=1,Review="Good",isLike=false},
                 new ProductReview(){ProductID=8,UserID=1,Rating=9,Review="nice",isLike=true},
                 new ProductReview(){ProductID=2,UserID=1,Rating=10,Review="nice",isLike=true},
@@ -41,6 +41,10 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("---------------------");
             Console.WriteLine("Use Case 4: Count of Each Review For ProductID");
             management.RetrieveCountOfRecords(productReviewList);
+
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 5: Retrieve Only ProductID and Review");
+            management.RetrieveOnlyProductIDAndReview(productReviewList);
 
         }
     }
