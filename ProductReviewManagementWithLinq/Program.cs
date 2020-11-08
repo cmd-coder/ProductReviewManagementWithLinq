@@ -55,6 +55,11 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("---------------------");
             management.SkipTop5Records(productReviewList);
 
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 7: Retrieve Only ProductID and Review");
+            Console.WriteLine("---------------------");
+            management.RetrieveOnlyProductIDAndReview(productReviewList);
+
         }
     }
 }
