@@ -38,6 +38,9 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("Use Case 3: Rating Greater Than 3 And ProductID Equal To 1, 4 or 9");
             management.SelectRecords(productReviewList);
 
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 4: Count of Each Review For ProductID");
+            management.RetrieveCountOfRecords(productReviewList);
 
         }
     }
