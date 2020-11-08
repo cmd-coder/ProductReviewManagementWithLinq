@@ -31,20 +31,29 @@ namespace ProductReviewManagementWithLinq
 
             Console.WriteLine("---------------------");
             Console.WriteLine("Use Case 2: Top Three Records With Highest Rating");
+            Console.WriteLine("---------------------");
             Management management = new Management();
             management.TopRecords(productReviewList);
 
             Console.WriteLine("---------------------");
             Console.WriteLine("Use Case 3: Rating Greater Than 3 And ProductID Equal To 1, 4 or 9");
+            Console.WriteLine("---------------------");
             management.SelectRecords(productReviewList);
 
             Console.WriteLine("---------------------");
             Console.WriteLine("Use Case 4: Count of Each Review For ProductID");
+            Console.WriteLine("---------------------");
             management.RetrieveCountOfRecords(productReviewList);
 
             Console.WriteLine("---------------------");
             Console.WriteLine("Use Case 5: Retrieve Only ProductID and Review");
+            Console.WriteLine("---------------------");
             management.RetrieveOnlyProductIDAndReview(productReviewList);
+
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Use Case 6: Skip Top 5 Records And Print Rest");
+            Console.WriteLine("---------------------");
+            management.SkipTop5Records(productReviewList);
 
         }
     }
