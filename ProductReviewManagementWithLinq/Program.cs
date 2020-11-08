@@ -60,6 +60,9 @@ namespace ProductReviewManagementWithLinq
             Console.WriteLine("---------------------");
             management.RetrieveOnlyProductIDAndReview(productReviewList);
 
+            //Use Case 8 and onwards
+            ProductDataTable.DataTableOfProducts();
+
         }
     }
 }
